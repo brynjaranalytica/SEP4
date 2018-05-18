@@ -5,9 +5,9 @@ insert into D_Date(date_id, day, month, year)
     values(DEFAULT, 31, 12, 99);
     
 declare
-  selected_date date := to_date('17-04-2018', 'DD-MM-YYYY');
+  selected_date date := to_date('01-01-1960', 'DD-MM-YYYY');
 --you can choose until when do you want to insert dates
-  last_date date := to_date('17-04-2118', 'DD-MM-YYYY');
+  last_date date := to_date('01-01-2060', 'DD-MM-YYYY');
 --or how many rows do you want to insert
   no_of_dates int := 100;
 begin
