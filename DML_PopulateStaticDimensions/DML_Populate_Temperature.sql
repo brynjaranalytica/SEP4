@@ -12,9 +12,9 @@ declare
   dew_point_temperature_fahrenheit number(6, 0);
 begin
 
-  while (temperature_celsius < temperature_celsius_max) loop
+  while (temperature_celsius <= temperature_celsius_max) loop
   
-    while (dew_point_temperature_celsius < dew_point_temperature_celsius_max) loop   
+    while (dew_point_temperature_celsius <= dew_point_temperature_celsius_max) loop   
     
       temperature_kelvin := temperature_celsius + 273.15;
       dew_point_temperature_kelvin := dew_point_temperature_celsius + 273.15;
