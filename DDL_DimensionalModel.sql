@@ -8,6 +8,7 @@ DROP SEQUENCE sqPressureSK;
 DROP SEQUENCE sqVisibilitySK;
 DROP SEQUENCE sqCloudCoverageSK;
 
+DROP TABLE F_Movement;
 DROP TABLE D_Longitude;
 DROP TABLE D_Latitude;
 DROP TABLE D_Time;
@@ -17,7 +18,7 @@ DROP TABLE D_Wind;
 DROP TABLE D_Pressure;
 DROP TABLE D_Visibility;
 DROP TABLE D_CloudCoverage;
-DROP TABLE F_Movement;
+
 
 -- Sequence for D_Longitude surrogate key
 CREATE SEQUENCE sqLongitudeSK
@@ -149,6 +150,7 @@ CREATE TABLE D_Date(
 
 create table D_Temperature (   
     temperature_id                   number(6, 0)
+                                     default sqTemperatureSK.nextVal
                                      constraint DTemperaturePK primary key,
     surface_temperature_kelvin         number(6, 0)
                                      not null,
@@ -167,6 +169,7 @@ create table D_Temperature (
 
 create table D_Wind (   
     wind_id               number(6, 0)
+                          default sqWindSK.nextVal
                           not null
                           constraint DWindPK primary key,
     direction             char(2)
@@ -178,7 +181,7 @@ create table D_Wind (
 
 create table D_Pressure (   
     pressure_id           number(6, 0)
-                          not null
+                          default sqPressureSK.nextVal
                           constraint DPressurePK primary key,
     barometric_pressure    number(6, 2)
                           not null
@@ -187,7 +190,7 @@ create table D_Pressure (
 
 create table D_Visibility (   
     visibility_id         number(6, 0)
-                          not null
+                          default sqVisibilitySK.nextVal
                           constraint DVisibilityPK primary key,
     visibility            number(6, 0)
                           not null                       
@@ -196,7 +199,7 @@ create table D_Visibility (
  
 create table D_CloudCoverage (   
     cloud_coverage_id     number(6, 0)
-                          not null
+                          default sqCloudCoverageSK.nextVal
                           constraint DCloudCoveragePK primary key,
     cloud_coverage        varchar(4)
                           not null,
