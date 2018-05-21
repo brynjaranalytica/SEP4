@@ -176,15 +176,18 @@ create table D_Temperature (
 )
 ;
 
+
 create table D_Wind (   
-    wind_id               number(6, 0)
-                          default sqWindSK.nextVal
-                          not null
-                          constraint DWindPK primary key,
-    direction             char(2)
-                          not null,
-    speed                 number(6, 2)
-                          not null
+    wind_id                 number(6, 0)
+                            default sqWindSK.nextVal
+                            not null
+                            constraint DWindPK primary key,
+    direction               char(2)
+                            not null,
+    speed_knots             number(6, 0)
+                            not null,
+    speed_meters_per_second number(6, 0)
+                            not null
 )
 ;
 
