@@ -123,15 +123,15 @@ CREATE TABLE D_GridCell (
                                CONSTRAINT coLongitudeSeconds
                                CHECK (start_longitude_seconds >= 0 AND start_longitude_seconds <= 60),
 
-  start_longitude_degrees      NUMBER(4, 0) 
+  end_longitude_degrees      NUMBER(4, 0) 
                                NOT NULL
                                CONSTRAINT coLongitudeDegrees 
                                CHECK (start_longitude_degrees >= 0 AND start_longitude_degrees <= 180),
-  start_longitude_minutes      NUMBER(3, 0)
+  end_longitude_minutes      NUMBER(3, 0)
                                NOT NULL
                                CONSTRAINT coLongitudeMinutes
                                CHECK (start_longitude_minutes >= 0 AND start_longitude_minutes <= 60),
-  start_longitude_seconds      NUMBER(3, 0)
+  end_longitude_seconds      NUMBER(3, 0)
                                NOT NULL
                                CONSTRAINT coLongitudeSeconds
                                CHECK (start_longitude_seconds >= 0 AND start_longitude_seconds <= 60), 

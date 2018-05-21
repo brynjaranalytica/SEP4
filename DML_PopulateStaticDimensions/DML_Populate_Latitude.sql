@@ -1,7 +1,7 @@
-delete from D_Latitude;
+delete from D_GridCell;
 
 -- Inserting the last row of the latitude (57 degrees, 30 minutes, 0 seconds) by hand because I can't make the procedure insert it
-insert into D_Latitude(latitude_id, degrees, minutes, seconds, as_decimal)
+insert into D_GridCell(latitude_id, degrees, minutes, seconds, as_decimal)
     values(DEFAULT, 57, 30, 0, 57+30/60+0/3600);
 
 -- A grid covering Denmark starts at latitude 54 degrees, 30 minutes North and extends to 57 degrees, 30 minutes Northt
