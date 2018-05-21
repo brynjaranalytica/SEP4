@@ -1,5 +1,4 @@
-DROP SEQUENCE sqLongitudeSK;
-DROP SEQUENCE sqLatitudeSK;
+DROP SEQUENCE sqGridCellSK;
 DROP SEQUENCE sqDateSK;
 DROP SEQUENCE sqTimeSK;
 DROP SEQUENCE sqTemperatureSK;
@@ -9,8 +8,7 @@ DROP SEQUENCE sqVisibilitySK;
 DROP SEQUENCE sqCloudCoverageSK;
 
 DROP TABLE F_Movement;
-DROP TABLE D_Longitude;
-DROP TABLE D_Latitude;
+DROP TABLE D_GridCell;
 DROP TABLE D_Time;
 DROP TABLE D_Date;  
 DROP TABLE D_Temperature;
@@ -20,15 +18,8 @@ DROP TABLE D_Visibility;
 DROP TABLE D_CloudCoverage;
 
 
--- Sequence for D_Longitude surrogate key
-CREATE SEQUENCE sqLongitudeSK
-START WITH 1
-INCREMENT BY 1
-NOMAXVALUE
-CACHE 100;
-
--- Sequence for D_Latitude surrogate key
-CREATE SEQUENCE sqLatitudeSK
+-- Sequence for D_GridCell surrogate key
+CREATE SEQUENCE sqGridCellSK
 START WITH 1
 INCREMENT BY 1
 NOMAXVALUE
@@ -89,45 +80,63 @@ noMaxValue
 ;
 
 
-CREATE TABLE D_Longitude (
-  longitude_id  NUMBER(6, 0) 
-                DEFAULT sqLongitudeSK.nextVal
-                CONSTRAINT DLongitudePK PRIMARY KEY,
-  degrees       NUMBER(4, 0) 
-                NOT NULL
-                CONSTRAINT coLongitudeDegrees 
-                      CHECK (degrees >= 0 AND degrees <= 180),
-  minutes       NUMBER(3, 0)
-                NOT NULL
-                CONSTRAINT coLongitudeMinutes
-                      CHECK (minutes >= 0 AND minutes <= 60),
-  seconds       NUMBER(3, 0)
-                NOT NULL
-                CONSTRAINT coLongitudeSeconds
-                CHECK (seconds >= 0 AND seconds <= 60),
-  as_decimal    NUMBER(13, 9)
-                NOT NULL
-);
+CREATE TABLE D_GridCell (
+  latitude_id                  NUMBER(6, 0) 
+                               DEFAULT sqGridCellSK.nextVal
+                               CONSTRAINT DGridCellPK PRIMARY KEY,
+  start_latitude_degrees       NUMBER(3, 0) 
+                               NOT NULL
+                               CONSTRAINT coLatitudeDegrees 
+                               CHECK (start_latitude_degrees >= 0 AND start_latitude_degrees <= 90),
+  start_latitude_minutes       NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLatitudeMinutes
+                               CHECK (start_latitude_minutes >= 0 AND start_latitude_minutes <= 60),
+  start_latitude_seconds       NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLatitudeSeconds
+                               CHECK (start_latitude_seconds >= 0 AND start_latitude_seconds <= 60),
+                               
+  end_latitude_degrees         NUMBER(3, 0) 
+                               NOT NULL
+                               CONSTRAINT coLatitudeDegrees 
+                               CHECK (end_latitude_degrees >= 0 AND end_latitude_degrees <= 90),
+  end_latitude_minutes         NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLatitudeMinutes
+                               CHECK (end_latitude_minutes >= 0 AND end_latitude_minutes <= 60),
+  end_latitude_seconds         NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLatitudeSeconds
+                               CHECK (end_latitude_seconds >= 0 AND end_latitude_seconds <= 60),
+  
+  start_longitude_degrees      NUMBER(4, 0) 
+                               NOT NULL
+                               CONSTRAINT coLongitudeDegrees 
+                               CHECK (start_longitude_degrees >= 0 AND start_longitude_degrees <= 180),
+  start_longitude_minutes      NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLongitudeMinutes
+                               CHECK (start_longitude_minutes >= 0 AND start_longitude_minutes <= 60),
+  start_longitude_seconds      NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLongitudeSeconds
+                               CHECK (start_longitude_seconds >= 0 AND start_longitude_seconds <= 60),
 
-
-CREATE TABLE D_Latitude (
-  latitude_id   NUMBER(6, 0) 
-                DEFAULT sqLatitudeSK.nextVal
-                CONSTRAINT DLatitudePK PRIMARY KEY,
-  degrees       NUMBER(3, 0) 
-                NOT NULL
-                CONSTRAINT coLatitudeDegrees 
-                      CHECK (degrees >= 0 AND degrees <= 90),
-  minutes       NUMBER(3, 0)
-                NOT NULL
-                CONSTRAINT coLatitudeMinutes
-                      CHECK (minutes >= 0 AND minutes <= 60),
-  seconds       NUMBER(3, 0)
-                NOT NULL
-                CONSTRAINT coLatitudeSeconds
-                      CHECK (seconds >= 0 AND seconds <= 60),
-  as_decimal    NUMBER(13, 9)
-                NOT NULL
+  start_longitude_degrees      NUMBER(4, 0) 
+                               NOT NULL
+                               CONSTRAINT coLongitudeDegrees 
+                               CHECK (start_longitude_degrees >= 0 AND start_longitude_degrees <= 180),
+  start_longitude_minutes      NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLongitudeMinutes
+                               CHECK (start_longitude_minutes >= 0 AND start_longitude_minutes <= 60),
+  start_longitude_seconds      NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coLongitudeSeconds
+                               CHECK (start_longitude_seconds >= 0 AND start_longitude_seconds <= 60), 
+  as_decimal                   NUMBER(13, 9)
+                               NOT NULL
 );
 
 CREATE TABLE D_Time (
@@ -211,10 +220,8 @@ create table D_CloudCoverage (
 CREATE TABLE F_Movement (
   delta_altitude          NUMBER(6, 0),
   delta_time              NUMBER(6, 0),
-  latitude_id             NUMBER(6, 0)
-                          REFERENCES D_Latitude (latitude_id),
-  longitude_id            NUMBER(6, 0)
-                          REFERENCES D_Longitude (longitude_id),
+  grid_id                 NUMBER(6, 0)
+                          REFERENCES D_GridCell (grid_id),
   start_time_id           NUMBER(6, 0)
                           REFERENCES D_Time (time_id),             
   date_id                 NUMBER(6, 0)
@@ -229,5 +236,5 @@ CREATE TABLE F_Movement (
                           REFERENCES D_Visibility (visibility_id),
   cloud_coverage_id       NUMBER(6, 0)
                           REFERENCES D_CloudCoverage (cloud_coverage_id),
-  CONSTRAINT FMovementPK PRIMARY KEY (latitude_id, longitude_id, start_time_id, date_id, temperature_id, wind_id, pressure_id, visibility_id, cloud_coverage_id)
+  CONSTRAINT FMovementPK PRIMARY KEY (grid_id, start_time_id, date_id, temperature_id, wind_id, pressure_id, visibility_id, cloud_coverage_id)
 );
