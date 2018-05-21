@@ -81,61 +81,36 @@ noMaxValue
 
 
 CREATE TABLE D_GridCell (
-  latitude_id                  NUMBER(6, 0) 
+  grid_cell_id                 NUMBER(6, 0) 
                                DEFAULT sqGridCellSK.nextVal
                                CONSTRAINT DGridCellPK PRIMARY KEY,
-  start_latitude_degrees       NUMBER(3, 0) 
+  latitude_degrees             NUMBER(3, 0) 
                                NOT NULL
                                CONSTRAINT coLatitudeDegrees 
-                               CHECK (start_latitude_degrees >= 0 AND start_latitude_degrees <= 90),
-  start_latitude_minutes       NUMBER(3, 0)
+                               CHECK (latitude_degrees >= 0 AND latitude_degrees <= 90),
+  latitude_minutes             NUMBER(3, 0)
                                NOT NULL
                                CONSTRAINT coLatitudeMinutes
-                               CHECK (start_latitude_minutes >= 0 AND start_latitude_minutes <= 60),
-  start_latitude_seconds       NUMBER(3, 0)
+                               CHECK (latitude_minutes >= 0 AND latitude_minutes <= 60),
+  latitude_seconds             NUMBER(3, 0)
                                NOT NULL
                                CONSTRAINT coLatitudeSeconds
-                               CHECK (start_latitude_seconds >= 0 AND start_latitude_seconds <= 60),
-                               
-  end_latitude_degrees         NUMBER(3, 0) 
+                               CHECK (latitude_seconds >= 0 AND latitude_seconds <= 60),
+  latitude_as_decimal          NUMBER(13, 10)
+                               NOT NULL,                          
+  longitude_degrees            NUMBER(4, 0) 
                                NOT NULL
-                               CONSTRAINT coLatitudeDegrees 
-                               CHECK (end_latitude_degrees >= 0 AND end_latitude_degrees <= 90),
-  end_latitude_minutes         NUMBER(3, 0)
-                               NOT NULL
-                               CONSTRAINT coLatitudeMinutes
-                               CHECK (end_latitude_minutes >= 0 AND end_latitude_minutes <= 60),
-  end_latitude_seconds         NUMBER(3, 0)
-                               NOT NULL
-                               CONSTRAINT coLatitudeSeconds
-                               CHECK (end_latitude_seconds >= 0 AND end_latitude_seconds <= 60),
-  
-  start_longitude_degrees      NUMBER(4, 0) 
-                               NOT NULL
-                               CONSTRAINT coLongitudeDegrees 
-                               CHECK (start_longitude_degrees >= 0 AND start_longitude_degrees <= 180),
-  start_longitude_minutes      NUMBER(3, 0)
+                               CONSTRAINT coLongitudeDegrees
+                               CHECK (longitude_degrees >= 0 AND longitude_degrees <= 180),
+  longitude_minutes            NUMBER(3, 0)
                                NOT NULL
                                CONSTRAINT coLongitudeMinutes
-                               CHECK (start_longitude_minutes >= 0 AND start_longitude_minutes <= 60),
-  start_longitude_seconds      NUMBER(3, 0)
+                               CHECK (longitude_minutes >= 0 AND longitude_minutes <= 60),
+  longitude_seconds            NUMBER(3, 0)
                                NOT NULL
                                CONSTRAINT coLongitudeSeconds
-                               CHECK (start_longitude_seconds >= 0 AND start_longitude_seconds <= 60),
-
-  end_longitude_degrees      NUMBER(4, 0) 
-                               NOT NULL
-                               CONSTRAINT coLongitudeDegrees 
-                               CHECK (start_longitude_degrees >= 0 AND start_longitude_degrees <= 180),
-  end_longitude_minutes      NUMBER(3, 0)
-                               NOT NULL
-                               CONSTRAINT coLongitudeMinutes
-                               CHECK (start_longitude_minutes >= 0 AND start_longitude_minutes <= 60),
-  end_longitude_seconds      NUMBER(3, 0)
-                               NOT NULL
-                               CONSTRAINT coLongitudeSeconds
-                               CHECK (start_longitude_seconds >= 0 AND start_longitude_seconds <= 60), 
-  as_decimal                   NUMBER(13, 9)
+                               CHECK (longitude_seconds >= 0 AND longitude_seconds <= 60),
+  longitude_as_decimal         NUMBER(13, 10)
                                NOT NULL
 );
 
@@ -158,45 +133,45 @@ CREATE TABLE D_Date(
 );
 
 create table D_Temperature (   
-    temperature_id                   number(6, 0)
-                                     default sqTemperatureSK.nextVal
-                                     constraint DTemperaturePK primary key,
-    surface_temperature_kelvin         number(6, 0)
-                                     not null,
-    surface_temperature_celsius        number(6, 0)
-                                     not null,
-    surface_temperature_fahrenheit     number(6, 0)
-                                     not null,                            
-    dew_point_temperature_kelvin        number(6, 0)
-                                     not null,
-    dew_point_emperature_celsius       number(6, 0)
-                                     not null,
-    dew_point_emperature_fahrenheit    number(6, 0)
-                                     not null
+    temperature_id                    number(6, 0)
+                                      default sqTemperatureSK.nextVal
+                                      constraint DTemperaturePK primary key,
+    surface_temperature_kelvin        number(6, 0)
+                                      not null,
+    surface_temperature_celsius       number(6, 0)
+                                      not null,
+    surface_temperature_fahrenheit    number(6, 0)
+                                      not null,                            
+    dew_point_temperature_kelvin      number(6, 0)
+                                      not null,
+    dew_point_emperature_celsius      number(6, 0)
+                                      not null,
+    dew_point_emperature_fahrenheit   number(6, 0)
+                                      not null
 )
 ;
 
 
 create table D_Wind (   
-    wind_id                 number(6, 0)
-                            default sqWindSK.nextVal
-                            not null
-                            constraint DWindPK primary key,
-    direction               char(2)
-                            not null,
-    speed_knots             number(6, 0)
-                            not null,
-    speed_meters_per_second number(6, 0)
-                            not null
+    wind_id                           number(6, 0)
+                                      default sqWindSK.nextVal
+                                      not null
+                                      constraint DWindPK primary key,
+    direction                         char(2)
+                                      not null,
+    speed_knots                       number(6, 0)
+                                      not null,
+    speed_meters_per_second           number(6, 0)
+                                      not null
 )
 ;
 
 create table D_Pressure (   
-    pressure_id           number(6, 0)
-                          default sqPressureSK.nextVal
-                          constraint DPressurePK primary key,
-    barometric_pressure    number(6, 2)
-                          not null
+    pressure_id                       number(6, 0)
+                                      default sqPressureSK.nextVal
+                                      constraint DPressurePK primary key,
+    barometric_pressure               number(6, 2)
+                                      not null
 )
 ;
 
@@ -224,7 +199,7 @@ CREATE TABLE F_Movement (
   delta_altitude          NUMBER(6, 0),
   delta_time              NUMBER(6, 0),
   grid_id                 NUMBER(6, 0)
-                          REFERENCES D_GridCell (grid_id),
+                          REFERENCES D_GridCell (grid_cell_id),
   start_time_id           NUMBER(6, 0)
                           REFERENCES D_Time (time_id),             
   date_id                 NUMBER(6, 0)
