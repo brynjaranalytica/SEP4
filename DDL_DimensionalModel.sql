@@ -180,7 +180,12 @@ create table D_Visibility (
                           default sqVisibilitySK.nextVal
                           constraint DVisibilityPK primary key,
     visibility            number(6, 0)
-                          not null                       
+                          not null, 
+    visibility_type       varchar(12)
+                          
+                          
+                          
+                          
 )
 ;
  
