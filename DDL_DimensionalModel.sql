@@ -84,36 +84,83 @@ CREATE TABLE D_GridCell (
   grid_cell_id                 NUMBER(6, 0) 
                                DEFAULT sqGridCellSK.nextVal
                                CONSTRAINT DGridCellPK PRIMARY KEY,
-  latitude_degrees             NUMBER(3, 0) 
+                               
+  -- The coordinates of the start of the cell
+  -- latitude degrees
+  start_lat_deg                NUMBER(3, 0) 
                                NOT NULL
-                               CONSTRAINT coLatitudeDegrees 
-                               CHECK (latitude_degrees >= 0 AND latitude_degrees <= 90),
-  latitude_minutes             NUMBER(3, 0)
+                               CONSTRAINT coStartLatDeg 
+                               CHECK (start_lat_deg >= 0 AND start_lat_deg <= 90),
+  -- latitude minutes
+  start_lat_min                NUMBER(3, 0)
                                NOT NULL
-                               CONSTRAINT coLatitudeMinutes
-                               CHECK (latitude_minutes >= 0 AND latitude_minutes <= 60),
-  latitude_seconds             NUMBER(3, 0)
+                               CONSTRAINT coStartLatMin
+                               CHECK (start_lat_min >= 0 AND start_lat_min <= 60),
+  -- latitude seconds
+  start_lat_s                  NUMBER(3, 0)
                                NOT NULL
-                               CONSTRAINT coLatitudeSeconds
-                               CHECK (latitude_seconds >= 0 AND latitude_seconds <= 60),
-  latitude_as_decimal          NUMBER(13, 10)
+                               CONSTRAINT coStartLatS
+                               CHECK (start_lat_s >= 0 AND start_lat_s <= 60),
+  -- latitude as a decimal
+  start_lat_as_decimal         NUMBER(10, 6)
                                NOT NULL,                          
-  longitude_degrees            NUMBER(4, 0) 
+  -- longitude degrees
+  start_long_deg               NUMBER(4, 0) 
                                NOT NULL
-                               CONSTRAINT coLongitudeDegrees
-                               CHECK (longitude_degrees >= 0 AND longitude_degrees <= 180),
-  longitude_minutes            NUMBER(3, 0)
+                               CONSTRAINT coStartLongDeg
+                               CHECK (start_long_deg >= 0 AND start_long_deg <= 180),
+  -- longitude minutes
+  start_long_min               NUMBER(3, 0)
                                NOT NULL
-                               CONSTRAINT coLongitudeMinutes
-                               CHECK (longitude_minutes >= 0 AND longitude_minutes <= 60),
-  longitude_seconds            NUMBER(3, 0)
+                               CONSTRAINT coStartLongMin
+                               CHECK (start_long_min >= 0 AND start_long_min <= 60),
+  -- longitude seconds
+  start_long_s                 NUMBER(3, 0)
                                NOT NULL
-                               CONSTRAINT coLongitudeSeconds
-                               CHECK (longitude_seconds >= 0 AND longitude_seconds <= 60),
-  longitude_as_decimal         NUMBER(13, 10)
+                               CONSTRAINT coStartLongS
+                               CHECK (start_long_s >= 0 AND start_long_s <= 60),
+  -- longitude as a decimal
+  start_long_as_decimal        NUMBER(10, 6)
+                               NOT NULL,
+  ------------------------------------------------------------------------------------------
+  -- The coordinates of the end of the cell (1 second before the next cell's start coordinates)                       
+  -- latitude degrees
+  end_lat_deg                  NUMBER(3, 0) 
                                NOT NULL
+                               CONSTRAINT coEndLatDeg 
+                               CHECK (end_lat_deg >= 0 AND end_lat_deg <= 90),
+  -- latitude minutes
+  end_lat_min                  NUMBER(3, 0)
+                               NOT NULL,
+                              -- CONSTRAINT coEndLatMin
+                               --CHECK (end_lat_min >= 0 AND end_lat_min <= 60),
+  -- latitude seconds
+  end_lat_s                    NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coEndLatS
+                               CHECK (end_lat_s >= 0 AND end_lat_s <= 60),
+  -- latitude as a decimal
+  end_lat_as_decimal           NUMBER(10, 6)
+                               NOT NULL,                          
+  -- longitude degrees
+  end_long_deg                 NUMBER(4, 0) 
+                               NOT NULL
+                               CONSTRAINT coEndLongDeg
+                               CHECK (end_long_deg >= 0 AND end_long_deg <= 180),
+  -- longitude minutes
+  end_long_min                 NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coEndLongMin
+                               CHECK (end_long_min >= 0 AND end_long_min <= 60),
+  -- longitude seconds
+  end_long_s                   NUMBER(3, 0)
+                               NOT NULL
+                               CONSTRAINT coEndLongS
+                               CHECK (end_long_s >= 0 AND end_long_s <= 60),
+  -- longitude as a decimal
+  end_long_as_decimal          NUMBER(10, 6)
+                               NOT NULL                           
 );
-
 CREATE TABLE D_Time (
     time_id         NUMBER(6, 0) 
                     DEFAULT sqTimeSK.nextVal
