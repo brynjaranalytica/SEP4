@@ -1,4 +1,4 @@
-drop table GridCellToAirport;
+drop table ETL_GridCellToAirport;
 drop table weather_stations;
 
 -- when running this on the server, don't create the weather_stations table
