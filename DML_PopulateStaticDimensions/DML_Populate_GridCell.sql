@@ -135,3 +135,5 @@ begin
   end loop;
 commit;
 end;
+/
+exit;

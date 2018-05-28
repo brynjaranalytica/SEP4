@@ -139,10 +139,9 @@ CREATE TABLE D_GridCell (
   grid_cell_id                 NUMBER(6, 0) 
                                DEFAULT sqGridCellSK.nextVal
                                CONSTRAINT DGridCellPK PRIMARY KEY,
-                               
-  -- The coordinates of the start of the cell
+  -- The coordinates of the start of the cell                      
   -- latitude degrees
-  start_lat_deg                NUMBER(3, 0) 
+  start_lat_deg 	       NUMBER(3, 0) 
                                NOT NULL
                                CONSTRAINT coStartLatDeg 
                                CHECK (start_lat_deg >= 0 AND start_lat_deg <= 90),
@@ -372,3 +371,5 @@ CREATE TABLE F_Movement (
   wind_direction_id,pressure_id, visibility_id, visibility_type_id,
   cloud_coverage_id, cloud_altitude_id)
 );
+/
+exit;
