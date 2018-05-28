@@ -1,6 +1,10 @@
 -- Time dimension population:
 delete from D_Time;
 
+-- Data not available
+insert into D_Time(time_id, hour, minute, second)
+    values(-1, -1, -1, -1);
+
 declare
   selected_time date := to_date('00:00:00', 'HH24:MI:SS');
 --you can choose until when do you want to insert time

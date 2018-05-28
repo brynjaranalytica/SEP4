@@ -1,8 +1,9 @@
 -- Date dimension population:
 delete from d_date;
 
+-- Data is not available
 insert into D_Date(date_id, day, month, year)
-    values(DEFAULT, 31, 12, 99);
+    values(-1, 31, 12, 9999);
     
 declare
   selected_date date := to_date('01-01-1960', 'DD-MM-YYYY');
