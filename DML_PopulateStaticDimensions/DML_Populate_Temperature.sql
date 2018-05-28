@@ -1,5 +1,9 @@
 delete from D_TEMPERATURE;
 
+-- Data is not available
+insert into D_Temperature
+      values (-1, -1, -1, -1, -1, -1, -1);
+
 declare
   temperature_celsius number(6, 0) := -30;
   temperature_celsius_max number(6, 0) := 50;
@@ -21,10 +25,7 @@ begin
       temperature_fahrenheit := temperature_celsius * 1.8 + 32;
       dew_point_temperature_fahrenheit := dew_point_temperature_celsius * 1.8 + 32;
       
-      insert into D_Temperature(temperature_id, surface_temperature_kelvin, 
-      surface_temperature_celsius, surface_temperature_fahrenheit, 
-      dew_point_temperature_kelvin, dew_point_emperature_celsius, 
-      dew_point_emperature_fahrenheit)
+      insert into D_Temperature
       values (DEFAULT, temperature_kelvin, temperature_celsius, temperature_fahrenheit, 
       dew_point_temperature_kelvin, dew_point_temperature_celsius, dew_point_temperature_fahrenheit);
       
