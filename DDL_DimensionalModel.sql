@@ -1,84 +1,139 @@
 DROP SEQUENCE sqGridCellSK;
 DROP SEQUENCE sqDateSK;
 DROP SEQUENCE sqTimeSK;
-DROP SEQUENCE sqTemperatureSK;
-DROP SEQUENCE sqWindSK;
+DROP SEQUENCE sqSurfaceTemperatureSK;
+DROP SEQUENCE sqDewPointTemperatureSK;
+DROP SEQUENCE sqWindSpeedSK;
+DROP SEQUENCE sqWindDirectionSK;
 DROP SEQUENCE sqPressureSK;
 DROP SEQUENCE sqVisibilitySK;
+DROP SEQUENCE sqVisibilityTypeSK;
 DROP SEQUENCE sqCloudCoverageSK;
+DROP SEQUENCE sqCloudAltitudeSK;
 
-DROP TABLE F_Movement;
-DROP TABLE D_GridCell;
-DROP TABLE D_Time;
-DROP TABLE D_Date;  
-DROP TABLE D_Temperature;
-DROP TABLE D_Wind;
-DROP TABLE D_Pressure;
-DROP TABLE D_Visibility;
-DROP TABLE D_CloudCoverage;
+
+DROP TABLE F_Movement PURGE;
+DROP TABLE D_GridCell PURGE;
+DROP TABLE D_Time PURGE;
+DROP TABLE D_Date PURGE;  
+DROP TABLE D_SurfaceTemperature PURGE;
+DROP TABLE D_DewPointTemperature PURGE;
+DROP TABLE D_WindSpeed PURGE;
+DROP TABLE D_WindDirection PURGE;
+DROP TABLE D_Pressure PURGE;
+DROP TABLE D_Visibility PURGE;
+DROP TABLE D_VisibilityType PURGE;
+DROP TABLE D_CloudCoverage PURGE;
+DROP TABLE D_CloudAltitude PURGE;
 
 
 -- Sequence for D_GridCell surrogate key
 CREATE SEQUENCE sqGridCellSK
-START WITH 1
+START WITH 0
 INCREMENT BY 1
+CACHE 100
 NOMAXVALUE
-CACHE 100;
+MINVALUE 0
+;
 
 -- Sequence for D_Date surrogate key
 CREATE SEQUENCE sqDateSK
-START WITH 1
+START WITH 0
 INCREMENT BY 1
+CACHE 100
 NOMAXVALUE
-CACHE 100;
+MINVALUE 0
+;
 
 -- Sequence for D_Time surrogate key
 CREATE SEQUENCE sqTimeSK
-START WITH 1
+START WITH 0
 INCREMENT BY 1
+CACHE 100
 NOMAXVALUE
-CACHE 100;
-
--- Sequence for D_Temperature surrogate key
-create sequence sqTemperatureSK
-start with 1
-increment by 1
-cache 100
-noMaxValue
+MINVALUE 0
 ;
 
--- Sequence for D_Wind surrogate key
-create sequence sqWindSK
-start with 1
+-- Sequence for D_SurfaceTemperature surrogate key
+create sequence sqSurfaceTemperatureSK
+start with 0
 increment by 1
 cache 100
 noMaxValue
+minvalue 0
+;
+
+-- Sequence for D_DewPointTemperature surrogate key
+create sequence sqDewPointTemperatureSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
+;
+
+-- Sequence for D_WindSpeed surrogate key
+create sequence sqWindSpeedSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
+;
+
+-- Sequence for D_WindDirection surrogate key
+create sequence sqWindDirectionSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
 ;
  
 -- Sequence for D_Pressure surrogate key
 create sequence sqPressureSK
-start with 1
+start with 0
 increment by 1
 cache 100
 noMaxValue
+minvalue 0
 ;
 
 -- Sequence for D_Visibility surrogate key
 create sequence sqVisibilitySK
-start with 1
+start with 0
 increment by 1
 cache 100
 noMaxValue
+minvalue 0
+;
+
+-- Sequence for D_VisibilityType surrogate key
+create sequence sqVisibilityTypeSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
 ;
 
 -- Sequence for D_CloudCoverage surrogate key
 create sequence sqCloudCoverageSK
-start with 1
+start with 0
 increment by 1
 cache 100
 noMaxValue
+minvalue 0
 ;
 
+-- Sequence for D_CloudAltitude surrogate key
+create sequence sqCloudAltitudeSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
+;
 
 CREATE TABLE D_GridCell (
   grid_cell_id                 NUMBER(6, 0) 
@@ -161,6 +216,8 @@ CREATE TABLE D_GridCell (
   end_long_as_decimal          NUMBER(10, 6)
                                NOT NULL                           
 );
+
+
 CREATE TABLE D_Time (
     time_id         NUMBER(6, 0) 
                     DEFAULT sqTimeSK.nextVal
@@ -170,48 +227,69 @@ CREATE TABLE D_Time (
     second          NUMBER(2, 0) NOT NULL
 );
 
+
 CREATE TABLE D_Date(
     date_id         NUMBER(6, 0) 
                     DEFAULT sqDateSK.nextVal
                     CONSTRAINT DDatePK PRIMARY KEY,
+    date_as_date    DATE NOT NULL,
     day             NUMBER(2, 0) NOT NULL,
     month           NUMBER(2, 0) NOT NULL,
     year            NUMBER(4, 0) NOT NULL
 );
 
-create table D_Temperature (   
-    temperature_id                    number(6, 0)
-                                      default sqTemperatureSK.nextVal
-                                      constraint DTemperaturePK primary key,
-    surface_temperature_kelvin        number(6, 0)
-                                      not null,
+
+create table D_SurfaceTemperature (   
+    surface_temperature_id            number(6, 0)
+                                      default sqSurfaceTemperatureSK.nextVal
+                                      constraint DSurfaceTemperaturePK primary key,
+    surface_temperature_fahrenheit    number(6, 0)
+                                      not null,                               
     surface_temperature_celsius       number(6, 0)
                                       not null,
-    surface_temperature_fahrenheit    number(6, 0)
-                                      not null,                            
-    dew_point_temperature_kelvin      number(6, 0)
-                                      not null,
-    dew_point_emperature_celsius      number(6, 0)
-                                      not null,
-    dew_point_emperature_fahrenheit   number(6, 0)
-                                      not null
+    surface_temperature_kelvin        number(6, 0)
+                                      not null                                     
 )
 ;
 
 
-create table D_Wind (   
-    wind_id                           number(6, 0)
-                                      default sqWindSK.nextVal
+create table D_DewPointTemperature (   
+    dew_point_temperature_id          number(6, 0)
+                                      default sqDewPointTemperatureSK.nextVal
+                                      constraint DDewPointTemperaturePK primary key,
+    dew_point_temperature_fahrenheit   number(6, 0)
+                                      not null, 
+    dew_point_temperature_celsius      number(6, 0)
+                                      not null,                                 
+    dew_point_temperature_kelvin      number(6, 0)
+                                      not null   
+)
+;
+
+
+create table D_WindSpeed (   
+    wind_speed_id                     number(6, 0)
+                                      default sqWindSpeedSK.nextVal
                                       not null
-                                      constraint DWindPK primary key,
-    direction                         char(2)
-                                      not null,
+                                      constraint DWindSpeedPK primary key,
     speed_knots                       number(6, 0)
                                       not null,
     speed_meters_per_second           number(6, 0)
                                       not null
 )
 ;
+
+
+create table D_WindDirection (   
+    wind_direction_id                 number(6, 0)
+                                      default sqWindDirectionSK.nextVal
+                                      not null
+                                      constraint DWindDirectionPK primary key,
+    direction                         char(4)
+                                      not null
+)
+;
+
 
 create table D_Pressure (   
     pressure_id                       number(6, 0)
@@ -222,49 +300,75 @@ create table D_Pressure (
 )
 ;
 
+
 create table D_Visibility (   
     visibility_id         number(6, 0)
                           default sqVisibilitySK.nextVal
                           constraint DVisibilityPK primary key,
     visibility            number(6, 0)
-                          not null, 
-    visibility_type       varchar(12)
-                          
-                          
-                          
-                          
+                          not null                      
 )
 ;
- 
+
+
+create table D_VisibilityType (   
+    visibility_type_id    number(6, 0)
+                          default sqVisibilityTypeSK.nextVal
+                          constraint DVisibilityTypePK primary key,
+    visibility_type       varchar(12)
+			  not null                       
+)
+;
+
+
 create table D_CloudCoverage (   
     cloud_coverage_id     number(6, 0)
                           default sqCloudCoverageSK.nextVal
                           constraint DCloudCoveragePK primary key,
     cloud_coverage        varchar(4)
-                          not null,
+                          not null
+)
+;
+
+
+create table D_CloudAltitude (   
+    cloud_altitude_id     number(6, 0)
+                          default sqCloudAltitudeSK.nextVal
+                          constraint DCloudAltitudePK primary key,
     cloud_height          number(13, 0)
                           not null
 )
 ;
 
 CREATE TABLE F_Movement (
-  delta_altitude          NUMBER(6, 0),
-  delta_time              NUMBER(6, 0),
-  grid_id                 NUMBER(6, 0)
-                          REFERENCES D_GridCell (grid_cell_id),
-  start_time_id           NUMBER(6, 0)
-                          REFERENCES D_Time (time_id),             
-  date_id                 NUMBER(6, 0)
-                          REFERENCES D_Date (date_id),
-  temperature_id          NUMBER(6, 0)
-                          REFERENCES D_Temperature (temperature_id),
-  wind_id                 NUMBER(6, 0)
-                          REFERENCES D_Wind (wind_id),
-  pressure_id             NUMBER(6, 0)
-                          REFERENCES D_Pressure (pressure_id),
-  visibility_id           NUMBER(6, 0)
-                          REFERENCES D_Visibility (visibility_id),
-  cloud_coverage_id       NUMBER(6, 0)
-                          REFERENCES D_CloudCoverage (cloud_coverage_id),
-  CONSTRAINT FMovementPK PRIMARY KEY (grid_id, start_time_id, date_id, temperature_id, wind_id, pressure_id, visibility_id, cloud_coverage_id)
+  delta_altitude            NUMBER(6, 0),
+  delta_time                NUMBER(6, 0),
+  grid_id                   NUMBER(6, 0)
+                            REFERENCES D_GridCell (grid_cell_id),
+  start_time_id             NUMBER(6, 0)
+                            REFERENCES D_Time (time_id),             
+  date_id                   NUMBER(6, 0)
+                            REFERENCES D_Date (date_id),
+  surface_temperature_id    NUMBER(6, 0)
+                            REFERENCES D_SurfaceTemperature (surface_temperature_id),                        
+  dew_point_temperature_id  NUMBER(6, 0)
+                            REFERENCES D_DewPointTemperature (dew_point_temperature_id),
+  wind_speed_id             NUMBER(6, 0)
+                            REFERENCES D_WindSpeed (wind_speed_id),
+  wind_direction_id         NUMBER(6, 0)
+                            REFERENCES D_WindDirection (wind_direction_id),                        
+  pressure_id               NUMBER(6, 0)
+                            REFERENCES D_Pressure (pressure_id),
+  visibility_id             NUMBER(6, 0)
+                            REFERENCES D_Visibility (visibility_id),
+  visibility_type_id        NUMBER(6, 0)
+                            REFERENCES D_VisibilityType (visibility_type_id),
+  cloud_coverage_id         NUMBER(6, 0)
+                            REFERENCES D_CloudCoverage (cloud_coverage_id),
+  cloud_altitude_id         NUMBER(6, 0)
+                            REFERENCES D_CloudAltitude (cloud_altitude_id),
+  CONSTRAINT FMovementPK PRIMARY KEY (grid_id, start_time_id, date_id, 
+  surface_temperature_id, dew_point_temperature_id, wind_speed_id, 
+  wind_direction_id,pressure_id, visibility_id, visibility_type_id,
+  cloud_coverage_id, cloud_altitude_id)
 );

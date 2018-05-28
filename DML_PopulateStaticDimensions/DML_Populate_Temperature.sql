@@ -1,6 +1,6 @@
 delete from D_TEMPERATURE;
 
--- Data is not available
+-- Data not available
 insert into D_Temperature
       values (-1, -1, -1, -1, -1, -1, -1);
 
@@ -36,5 +36,3 @@ begin
   end loop;
   commit;
 end;
-
-select count(*) from D_TEMPERATURE;

@@ -1,5 +1,9 @@
 delete from D_Gridcell;
 
+-- Data not available
+insert into D_GridCell
+values (-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
 declare
 --- when we insert into the GridCell, we insert both the start coordinates and the end coordinates of the cell 
   current_latitude_degrees number(4, 0) := 54;
