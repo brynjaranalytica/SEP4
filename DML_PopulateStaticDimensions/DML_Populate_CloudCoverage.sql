@@ -18,7 +18,4 @@ begin
   commit;
 end;
 
-insert into D_CloudCoverage(cloud_coverage_id, cloud_coverage, cloud_height)
-        values (DEFAULT, 'NSC', -1);
-
 select count(*) from D_CloudCoverage;

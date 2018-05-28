@@ -1,5 +1,9 @@
 delete from D_Pressure;
 
+-- Data is not available
+insert into D_Pressure(pressure_id, barometric_Pressure)
+      values (-1, -1);
+
 declare
   pressure number(6, 0) := 600;
   pressure_max number(6, 0) := 2000;
