@@ -26,7 +26,6 @@ DROP TABLE D_Visibility PURGE;
 DROP TABLE D_VisibilityType PURGE;
 DROP TABLE D_CloudCoverage PURGE;
 DROP TABLE D_CloudAltitude PURGE;
-DROP TABLE D_CloudAltitude PURGE;
 DROP TABLE D_Audit PURGE;
 
 
