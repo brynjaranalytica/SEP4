@@ -10,6 +10,7 @@ DROP SEQUENCE sqVisibilitySK;
 DROP SEQUENCE sqVisibilityTypeSK;
 DROP SEQUENCE sqCloudCoverageSK;
 DROP SEQUENCE sqCloudAltitudeSK;
+DROP SEQUENCE sqAuditSK;
 
 
 DROP TABLE F_Movement PURGE;
@@ -25,6 +26,8 @@ DROP TABLE D_Visibility PURGE;
 DROP TABLE D_VisibilityType PURGE;
 DROP TABLE D_CloudCoverage PURGE;
 DROP TABLE D_CloudAltitude PURGE;
+DROP TABLE D_CloudAltitude PURGE;
+DROP TABLE D_Audit PURGE;
 
 
 -- Sequence for D_GridCell surrogate key
@@ -134,6 +137,16 @@ cache 100
 noMaxValue
 minvalue 0
 ;
+
+-- Sequence for D_Audit surrogate key
+create sequence sqAuditSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
+;
+
 
 CREATE TABLE D_GridCell (
   grid_cell_id                 NUMBER(6, 0) 
@@ -339,6 +352,15 @@ create table D_CloudAltitude (
 )
 ;
 
+CREATE TABLE d_audit(
+    audit_id        NUMBER(6, 0) 
+                    DEFAULT sqAuditSK.nextVal
+                    CONSTRAINT DAuditPK PRIMARY KEY,
+    fixed_no        NUMBER(6, 0) NOT NULL,
+    discarded_no    NUMBER(6, 0) NOT NULL,
+    ignored_no      NUMBER(6, 0) NOT NULL
+);
+
 CREATE TABLE F_Movement (
   delta_altitude            NUMBER(6, 0),
   delta_time                NUMBER(6, 0),
@@ -366,10 +388,12 @@ CREATE TABLE F_Movement (
                             REFERENCES D_CloudCoverage (cloud_coverage_id),
   cloud_altitude_id         NUMBER(6, 0)
                             REFERENCES D_CloudAltitude (cloud_altitude_id),
+  audit_id		    NUMBER(6, 0)
+			    REFERENCES D_Audit (audit_id),
   CONSTRAINT FMovementPK PRIMARY KEY (grid_id, start_time_id, date_id, 
   surface_temperature_id, dew_point_temperature_id, wind_speed_id, 
   wind_direction_id,pressure_id, visibility_id, visibility_type_id,
-  cloud_coverage_id, cloud_altitude_id)
+  cloud_coverage_id, cloud_altitude_id, audit_id)
 );
 /
 exit;
