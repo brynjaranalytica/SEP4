@@ -55,7 +55,7 @@ begin
      else
        next_longitude_seconds := 0;
        next_longitude_minutes := current_longitude_minutes + 1;
-       if current_longitude_minutes >= 60 then
+       if next_longitude_minutes >= 60 then
          next_longitude_degrees := current_longitude_degrees + 1;
          next_longitude_minutes := 0;
        end if;
