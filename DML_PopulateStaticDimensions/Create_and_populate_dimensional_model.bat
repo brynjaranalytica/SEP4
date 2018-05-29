@@ -1,6 +1,6 @@
 echo Create and populate dimensional model
 pause
-sqlplus SEP4/Horsens@SEP4 @"C:\Users\dea\Desktop\SEP4D\git\DDL_DimensionalModel"
+sqlplus SEP4/Horsens@SEP4 @"DDL_DimensionalModel"
 sqlplus SEP4/Horsens@SEP4 @"DML_Populate_CloudAltitude"
 sqlplus SEP4/Horsens@SEP4 @"DML_Populate_CloudCoverage"
 sqlplus SEP4/Horsens@SEP4 @"DML_Populate_Date"
