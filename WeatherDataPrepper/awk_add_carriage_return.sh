@@ -1,0 +1,1 @@
+awk '{printf "%s\r\n", $0}' TempFiles/FetchedWeatherData.txt > PreparedFiles/PreparedWeatherData.txt

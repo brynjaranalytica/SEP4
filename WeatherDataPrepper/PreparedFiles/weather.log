@@ -1,0 +1,3960 @@
+
+
+ LOG-fil åbnede ved 05/23/18 12:26:27
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:29:29
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:31:28
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:32:04
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:33:25
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:31:36
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:37:24
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:41:02
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:43:54
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG file opened at 05/23/18 22:00:20
+
+Field Definitions for table EXTERNAL_WEATHER_DATA
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    STATION                         CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG-fil åbnede ved 05/24/18 11:42:51
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/24/18 12:29:41
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:25:20
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:39:40
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:45:40
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:43:47
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:45:56
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:46:04
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:58:09
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:57:37
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:01:52
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:00:46
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:02:11
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:02:38
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:04:22
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:06:31
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:08:53
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:13:51
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 11:22:54
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 12:00:30
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 10:37:08
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 12:32:06
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 13:32:59
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 13:36:49
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 16:23:56
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/28/18 16:24:19
+
+Feltdefinitioner for tabel EXTERNAL_WEATHER_DATA
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    STATION                         CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Afsluttet af ","
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG file opened at 05/28/18 22:01:47
+
+Field Definitions for table EXTERNAL_WEATHER_DATA
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    STATION                         CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/28/18 22:01:50
+
+Field Definitions for table EXTERNAL_WEATHER_DATA
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    STATION                         CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/29/18 09:32:54
+
+Field Definitions for table EXTERNAL_WEATHER_DATA
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    STATION                         CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/29/18 11:05:08
+
+Field Definitions for table EXTERNAL_WEATHER_DATA
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    STATION                         CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIMESTAMP                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SURFACE_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    DEW_POINT_TEMPERATURE_FAHRENHEIT  CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RELATIVE_HUMIDITY_PERCENTAGE    CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_DIRECTION_DEGREES          CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_SPEED_KNOTS                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    ONE_HOUR_PRECIPITATION_INCHES   CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTIMETER_INCHES       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SEA_LEVEL_PRESSURE_MILLIBAR     CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    VISIBILITY_MILES                CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    WIND_GUST_KNOTS                 CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_COVERAGE            CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_1_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_2_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_3_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SKY_LEVEL_4_ALTITUDE_FEET       CHAR (255)
+      Terminated by ","
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader

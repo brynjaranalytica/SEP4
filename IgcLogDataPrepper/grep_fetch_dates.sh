@@ -1,0 +1,1 @@
+grep -o -E '^HFDTE([0-9]{6})' LogFiles/* /dev/null > TempFiles/FetchedDates.igc

@@ -1,0 +1,1 @@
+awk ' { printf("%s;%s;%s;%s\r\n", substr($0,1,length($0)-12), substr($0,length($0)-5,2), substr($0,length($0)-3,2), substr($0,length($0)-1,2)) } ' TempFiles/FetchedDates.igc > PreparedFiles/DelimitedDates.txt

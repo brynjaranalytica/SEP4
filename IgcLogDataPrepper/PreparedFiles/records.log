@@ -1,0 +1,559 @@
+
+
+ LOG-fil åbnede ved 05/23/18 12:08:41
+
+Feltdefinitioner for tabel EXTERNAL_RECORDS
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    FILE_PATH                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:08:57
+
+Feltdefinitioner for tabel EXTERNAL_RECORDS
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    FILE_PATH                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:09:38
+
+Feltdefinitioner for tabel EXTERNAL_RECORDS
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    FILE_PATH                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:14:12
+
+Feltdefinitioner for tabel EXTERNAL_RECORDS
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    FILE_PATH                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG-fil åbnede ved 05/23/18 12:41:43
+
+Feltdefinitioner for tabel EXTERNAL_RECORDS
+  Record-format DELIMITED BY NEWLINE
+  Data i fil har samme endian-format som platformen
+  Rækker, hvor alle felter er NULL, accepteres
+
+  Felter i datakilde: 
+
+    FILE_PATH                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LATITUDE                        CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    LONGITUDE                       CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Afsluttet af ";"
+      Omsluttet af """ og """
+      Trim blanktegn på samme måde som SQL Loader
+
+
+ LOG file opened at 05/23/18 22:00:19
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/23/18 22:00:20
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/28/18 11:09:55
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/28/18 11:11:15
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/28/18 15:39:26
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/28/18 22:00:20
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/28/18 22:00:21
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/29/18 10:53:38
+
+Field Definitions for table EXTERNAL_RECORDS
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    FILE_PATH                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    RECORD_TYPE                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    TIME_OF_LOG                     CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LATITUDE                        CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    LONGITUDE                       CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    SATELLITE_COVERAGE              CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    PRESSURE_ALTITUDE               CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader
+    GPS_ALTITUDE                    CHAR (255)
+      Terminated by ";"
+      Enclosed by """ and """
+      Trim whitespace same as SQL Loader

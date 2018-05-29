@@ -1,0 +1,6 @@
+grep_fetch_records.sh
+grep_fetch_dates.sh
+awk_delimit_records.sh
+awk_delimit_dates.sh
+remove_temp_files.sh
+archive_log_files.sh
