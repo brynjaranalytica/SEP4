@@ -306,7 +306,7 @@ create table D_Pressure (
     pressure_id                       number(6, 0)
                                       default sqPressureSK.nextVal
                                       constraint DPressurePK primary key,
-    barometric_pressure               number(6, 2)
+    barometric_pressure               number(6, 0)
                                       not null
 )
 ;
