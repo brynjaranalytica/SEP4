@@ -48,6 +48,7 @@ begin
         
         new_record.start_latitude := to_number(substr(previous_record.latitude, 1, length(previous_record.latitude)-1));
         new_record.end_latitude := to_number(substr(current_record.latitude, 1, length(current_record.latitude)-1));
+        
         new_record.start_longitude := to_number(substr(previous_record.longitude, 1, length(previous_record.longitude)-1));
         new_record.end_longitude := to_number(substr(current_record.longitude, 1, length(current_record.longitude)-1));
         

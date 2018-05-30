@@ -7,7 +7,7 @@ create table transform_one_second_segments
 , file_path         varchar2(255)
 , delta_altitude    number
 , start_latitude    number
-, end_latitude      number
+, end_latitude     number
 , start_longitude   number
 , end_longitude     number
 , start_date_time_of_log date
@@ -31,9 +31,9 @@ declare
 begin
   DBMS_OUTPUT.ENABLE(buffer_size => NULL);
 
-  for current_record in (select * from transform_connected_coordinates order by file_path, start_date_time_of_log) loop
-    latitude_interval := (current_record.end_latitude - current_record.start_latitude) / current_record.delta_time;
-    longitude_interval := (current_record.end_longitude - current_record.start_longitude) / current_record.delta_time;
+  for current_record in (select * from transform_coordinates_to_decimal order by file_path, start_date_time_of_log) loop
+    latitude_interval := (current_record.end_latitude_as_decimal - current_record.start_latitude_as_decimal) / current_record.delta_time;
+    longitude_interval := (current_record.end_longitude_as_decimal - current_record.start_longitude_as_decimal) / current_record.delta_time;
     for s in 1..(current_record.delta_time) loop
     
       new_record.file_path := current_record.file_path;
@@ -41,10 +41,10 @@ begin
       
       new_record.delta_altitude := current_record.delta_altitude / current_record.delta_time;
       
-      new_record.start_latitude := current_record.start_latitude + (latitude_interval * (s - 1));
+      new_record.start_latitude := current_record.start_latitude_as_decimal + (latitude_interval * (s - 1));
       new_record.end_latitude := new_record.start_latitude + latitude_interval;
       
-      new_record.start_longitude := current_record.start_longitude + (longitude_interval * (s - 1));
+      new_record.start_longitude := current_record.start_longitude_as_decimal + (longitude_interval * (s - 1));
       new_record.end_longitude := new_record.start_longitude + longitude_interval;
       
       new_record.start_date_time_of_log := current_record.start_date_time_of_log + numToDSInterval( (s - 1), 'second' );
