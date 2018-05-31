@@ -228,6 +228,11 @@ CREATE TABLE D_GridCell (
                                NOT NULL                           
 );
 
+CREATE INDEX ix_d_gridcell_start_latitude ON d_gridcell (start_lat_deg, start_lat_min, start_lat_s);
+CREATE INDEX ix_d_gridcell_start_longitude ON d_gridcell (start_long_deg, start_long_min, start_long_s);
+CREATE INDEX ix_d_gridcell_start_latitude_as_decimal ON d_gridcell (start_lat_as_decimal);
+CREATE INDEX ix_d_gridcell_start_longitude_as_decimal ON d_gridcell (start_long_as_decimal);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4','D_GRIDCELL');
 
 CREATE TABLE D_Time (
     time_id         NUMBER(6, 0) 
@@ -238,6 +243,8 @@ CREATE TABLE D_Time (
     second          NUMBER(2, 0) NOT NULL
 );
 
+CREATE INDEX ix_d_time_hour_minute_second ON d_time (hour, minute, second);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4','D_TIME');
 
 CREATE TABLE D_Date(
     date_id         NUMBER(6, 0) 
@@ -249,6 +256,8 @@ CREATE TABLE D_Date(
     year            NUMBER(4, 0) NOT NULL
 );
 
+CREATE INDEX ix_d_date_year_month_day ON d_date (year, month, day);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4','D_DATE');
 
 create table D_SurfaceTemperature (   
     surface_temperature_id            number(6, 0)
