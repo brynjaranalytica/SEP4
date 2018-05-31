@@ -53,3 +53,12 @@ from transform_connected_coordinates
 union
 select avg(start_longitude + end_longitude)
 from transform_one_second_segments;
+
+select count(*)
+from transform_log_data_with_grid_cell_id
+;
+
+select *
+from transform_log_data_with_grid_cell_id
+where grid_cell_id is null
+;
