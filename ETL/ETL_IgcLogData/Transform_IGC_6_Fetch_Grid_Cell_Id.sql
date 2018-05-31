@@ -10,7 +10,7 @@
  * coordinates have been logged outside of the grid.
  *
  * Past transformation: Transform_IGC_5_Average_Latitude_Longitude
- * Next transformation: ...
+ * Next transformation: Transform_IGC_7_Join_Weather_Data
  */
 drop table transform_igc_6_fetch_grid_cell_id
 ;
@@ -21,6 +21,7 @@ select a.surrogate_key
      , a.start_date_time_of_log
      , a.delta_altitude
      , coalesce(b.grid_cell_id, -1) as grid_cell_id
+     , b.nearest_weather_station
      , a.average_latitude
      , a.average_longitude
      , a.start_latitude
@@ -28,7 +29,7 @@ select a.surrogate_key
      , a.start_longitude
      , a.end_longitude
      , a.delta_time
-from (select * from  transform_igc_5_average_latitude_longitude order by surrogate_key) a
+from transform_igc_5_average_latitude_longitude a
 left join d_gridcell b on
     ( a.average_latitude >= b.start_lat_as_decimal
   and a.average_latitude < b.end_lat_as_decimal
