@@ -5,8 +5,8 @@ insert into D_Pressure
       values (-1, -1);
 
 declare
-  pressure number(6, 0) := 600;
-  pressure_max number(6, 0) := 2000;
+  pressure number(6, 0) := 0;
+  pressure_max number(6, 0) := 1000;
   
 begin
   while (pressure <= pressure_max) loop

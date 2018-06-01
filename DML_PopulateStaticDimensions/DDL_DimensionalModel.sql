@@ -305,7 +305,7 @@ create table D_WindDirection (
                                       default sqWindDirectionSK.nextVal
                                       not null
                                       constraint DWindDirectionPK primary key,
-    direction                         char(4)
+    direction                         varchar2(4)
                                       not null
 )
 ;
