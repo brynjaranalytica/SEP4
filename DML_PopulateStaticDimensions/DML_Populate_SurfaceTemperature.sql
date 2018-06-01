@@ -6,7 +6,7 @@ insert into D_SurfaceTemperature
 
 declare
   temperature_celsius number(6, 0) := -30;
-  temperature_celsius_max number(6, 0) := 50;
+  temperature_celsius_max number(6, 0) := 100;
   temperature_kelvin number(6, 0);
   temperature_fahrenheit number(6, 0); 
 begin
@@ -14,7 +14,7 @@ begin
     temperature_kelvin := temperature_celsius + 273.15;
     temperature_fahrenheit := temperature_celsius * 1.8 + 32;
     insert into D_SurfaceTemperature
-      values (DEFAULT, temperature_kelvin, temperature_celsius, temperature_fahrenheit);
+      values (DEFAULT, temperature_fahrenheit, temperature_celsius, temperature_kelvin);
     temperature_celsius := temperature_celsius + 1;
   end loop;
 commit;
