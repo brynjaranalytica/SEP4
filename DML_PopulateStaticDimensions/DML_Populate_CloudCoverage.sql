@@ -6,7 +6,7 @@ insert into D_CloudCoverage
 
 declare
   type array_c is varray(5) of varchar(4);
-  array array_c := array_c('FEW', 'SCT', 'BKN', 'OVC', 'NSC');
+  array array_c := array_c('FEW', 'SCT', 'BKN', 'OVC', 'NCD');
 begin
   for i in 1..array.count loop
     insert into D_CloudCoverage

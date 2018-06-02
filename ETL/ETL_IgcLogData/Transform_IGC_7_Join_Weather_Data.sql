@@ -1,14 +1,12 @@
 /* This script joins the igc log data together with the transformed weather
  * data. This is done by first figuring out which weather data is the best match
  * for the given row in the log data. The best match is determined by the
- * closest weather station of the grid cell the log data points to, and also
- * the closest time.
- *
+ * closest weather station of the grid cell the log data points to.
+ * 
  * There is much room for improvement.
  *
- * Past transformation: Transform_IGC_6_Fetch_Grid_Cell_Id,
- *                      8_Transformed_Weather_data
- * Next transformation: ...
+ * Past transformation: Transform_IGC_6_Fetch_Grid_Cell_Id
+ * Next transformation: Transform_IGC_8_Prepare_For_Load
  */
 drop table date_differences
 ;
