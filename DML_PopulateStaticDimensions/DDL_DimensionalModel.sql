@@ -7,11 +7,10 @@ DROP SEQUENCE sqWindSpeedSK;
 DROP SEQUENCE sqWindDirectionSK;
 DROP SEQUENCE sqPressureSK;
 DROP SEQUENCE sqVisibilitySK;
-DROP SEQUENCE sqVisibilityTypeSK;
 DROP SEQUENCE sqCloudCoverageSK;
 DROP SEQUENCE sqCloudAltitudeSK;
+DROP SEQUENCE sqLogSourceSK;
 DROP SEQUENCE sqAuditSK;
-
 
 DROP TABLE F_Movement PURGE;
 DROP TABLE D_GridCell PURGE;
@@ -23,9 +22,9 @@ DROP TABLE D_WindSpeed PURGE;
 DROP TABLE D_WindDirection PURGE;
 DROP TABLE D_Pressure PURGE;
 DROP TABLE D_Visibility PURGE;
-DROP TABLE D_VisibilityType PURGE;
 DROP TABLE D_CloudCoverage PURGE;
 DROP TABLE D_CloudAltitude PURGE;
+DROP TABLE D_LogSource PURGE;
 DROP TABLE D_Audit PURGE;
 
 
@@ -110,15 +109,6 @@ noMaxValue
 minvalue 0
 ;
 
--- Sequence for D_VisibilityType surrogate key
-create sequence sqVisibilityTypeSK
-start with 0
-increment by 1
-cache 100
-noMaxValue
-minvalue 0
-;
-
 -- Sequence for D_CloudCoverage surrogate key
 create sequence sqCloudCoverageSK
 start with 0
@@ -130,6 +120,15 @@ minvalue 0
 
 -- Sequence for D_CloudAltitude surrogate key
 create sequence sqCloudAltitudeSK
+start with 0
+increment by 1
+cache 100
+noMaxValue
+minvalue 0
+;
+
+-- Sequence for D_LogSource surrogate key
+create sequence sqLogSourceSK
 start with 0
 increment by 1
 cache 100
@@ -330,17 +329,6 @@ create table D_Visibility (
 )
 ;
 
-
-create table D_VisibilityType (   
-    visibility_type_id    number(6, 0)
-                          default sqVisibilityTypeSK.nextVal
-                          constraint DVisibilityTypePK primary key,
-    visibility_type       varchar(12)
-			  not null                       
-)
-;
-
-
 create table D_CloudCoverage (   
     cloud_coverage_id     number(6, 0)
                           default sqCloudCoverageSK.nextVal
@@ -360,7 +348,17 @@ create table D_CloudAltitude (
 )
 ;
 
-CREATE TABLE d_audit(
+
+CREATE TABLE D_LogSource (
+    log_source_id   NUMBER(6, 0) 
+                    DEFAULT sqLogSourceSK.nextVal
+                    CONSTRAINT DLogSourcePK PRIMARY KEY,
+    log             VARCHAR2(255)
+                    NOT NULL
+);
+
+
+CREATE TABLE D_Audit (
     audit_id        NUMBER(6, 0) 
                     DEFAULT sqAuditSK.nextVal
                     CONSTRAINT DAuditPK PRIMARY KEY,
@@ -372,6 +370,8 @@ CREATE TABLE d_audit(
 CREATE TABLE F_Movement (
   delta_altitude            NUMBER(6, 0),
   delta_time                NUMBER(6, 0),
+  log_source_id             NUMBER(6, 0)
+                            REFERENCES D_LogSource (log_source_id),
   grid_id                   NUMBER(6, 0)
                             REFERENCES D_GridCell (grid_cell_id),
   start_time_id             NUMBER(6, 0)
@@ -390,18 +390,17 @@ CREATE TABLE F_Movement (
                             REFERENCES D_Pressure (pressure_id),
   visibility_id             NUMBER(6, 0)
                             REFERENCES D_Visibility (visibility_id),
-  visibility_type_id        NUMBER(6, 0)
-                            REFERENCES D_VisibilityType (visibility_type_id),
   cloud_coverage_id         NUMBER(6, 0)
                             REFERENCES D_CloudCoverage (cloud_coverage_id),
   cloud_altitude_id         NUMBER(6, 0)
                             REFERENCES D_CloudAltitude (cloud_altitude_id),
   audit_id		    NUMBER(6, 0)
-			    REFERENCES D_Audit (audit_id),
-  CONSTRAINT FMovementPK PRIMARY KEY (grid_id, start_time_id, date_id, 
+                            REFERENCES D_Audit (audit_id),
+  CONSTRAINT FMovementPK PRIMARY KEY (log_source_id, grid_id, start_time_id, date_id, 
   surface_temperature_id, dew_point_temperature_id, wind_speed_id, 
-  wind_direction_id,pressure_id, visibility_id, visibility_type_id,
-  cloud_coverage_id, cloud_altitude_id, audit_id)
+  wind_direction_id,pressure_id, visibility_id,
+  cloud_coverage_id, cloud_altitude_id)
+  --, audit_id)
 );
 /
 exit;
