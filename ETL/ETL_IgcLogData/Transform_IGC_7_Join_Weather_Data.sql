@@ -13,10 +13,10 @@ drop table date_differences
 
 create table date_differences as
 select a.surrogate_key as igc_key
-     , b.surrogate_key as weather_key
+     , b.key as weather_key
      , (abs(a.start_date_time_of_log - b.log_date)) * 24 * 60 as date_difference_in_minutes
 from transform_igc_6_fetch_grid_cell_id a, transformed_weather_data b
-where b.log_date > to_date('2016-01-01', 'YYYY-MM-DD')
+where trunc(a.start_date_time_of_log) = trunc(b.log_date)
   and a.nearest_weather_station = b.station
 ;
 
@@ -39,5 +39,5 @@ create table transform_igc_7_join_weather_data as
 select *
 from transform_igc_6_fetch_grid_cell_id a
 join least_difference b on (a.surrogate_key = b.igc_key)
-join transformed_weather_data c on (b.weather_key = c.surrogate_key)
+join transformed_weather_data c on (b.weather_key = c.key)
 ;

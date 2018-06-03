@@ -18,6 +18,7 @@ create table TRANSFORMED_WEATHER_DATA as (select 0 as surrogate_key, TRANSFORM_W
                                   
 create index ix_transformed_weather_data_date on transformed_weather_data(log_date);
 create index ix_transformed_weather_data_station on transformed_weather_data(station);
+create index ix_transformed_weather_data_station_date on transformed_weather_data(log_date, station);
 
 -- good thing it's all fine
 -- bad thing is that we don't have a PK
