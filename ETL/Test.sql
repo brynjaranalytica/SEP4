@@ -1,5 +1,13 @@
-DBMS_OUTPUT.ENABLE (buffer_size => NULL);
-
+/* This script is a test framework with a line of tests on the transformation
+ * process.
+ *
+ * The tests are stored in a table with a column 'result' dictating whether
+ * the test passed or not.
+ *
+ * The table also contains information about other variables such as the input
+ * and output table names of the transformation step and the condition the test
+ * must pass.
+ */
 drop table test purge
 ;
 
