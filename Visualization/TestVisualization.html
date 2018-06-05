@@ -1,0 +1,76 @@
+<html>
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- Plotly chart will be drawn inside this DIV -->
+<div id="graphDiv"></div>
+  <script>
+  (async function(){
+ 
+	
+  const json = await fetch('http://localhost:8080/VisualizeThermals/data').then(res=>res.json()).catch(console.log);
+  var json_result_cell_mid_lat = json.cell_mid_lat;
+  var json_result_cell_mid_long = json.cell_mid_long;
+	
+  var myJson = 
+{
+  data: [
+       {
+         type: "scattermapbox",
+         lat: 
+					json_result_cell_mid_lat   
+         , 
+         lon: 
+                   json_result_cell_mid_long 
+         ,
+         mode: "markers",
+         marker: {
+               "size":14
+         }
+    }
+    ], 
+    layout: {
+       title: "Thermals Map",
+       font: {
+         color: "white"
+       },
+       dragmode: "zoom",
+       mapbox: {
+          center: {
+               lat: 38.03697222, 
+               lon: -90.70916722
+          }, 
+          domain: {
+               x: [0, 1], 
+               y: [0, 1]
+           }, 
+           style: "dark", 
+           zoom: 1
+       }, 
+       margin: {
+            r: 20, 
+            t: 40, 
+            b: 20, 
+            l: 20, 
+            pad: 0
+        },
+       paper_bgcolor: "#191A1A",
+       plot_bgcolor: "#191A1A"
+       }
+};
+
+var figure = myJson;
+
+
+Plotly.setPlotConfig({
+    mapboxAccessToken: 'pk.eyJ1IjoiZXRwaW5hcmQiLCJhIjoiY2luMHIzdHE0MGFxNXVubTRxczZ2YmUxaCJ9.hwWZful0U2CQxit4ItNsiQ'
+  });
+ Plotly.plot('graphDiv',  figure.data, figure.layout);
+})()
+  </script>
+</div>
+</body>
+</html>
