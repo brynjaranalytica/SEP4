@@ -271,6 +271,10 @@ create table D_SurfaceTemperature (
 )
 ;
 
+CREATE INDEX ix_d_surfacetemperature_fahrenheit ON d_surfacetemperature (surface_temperature_fahrenheit);
+CREATE INDEX ix_d_surfacetemperature_celsius ON d_surfacetemperature (surface_temperature_celsius);
+CREATE INDEX ix_d_surfacetemperature_kelvin ON d_surfacetemperature (surface_temperature_kelvin);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4','D_SURFACETEMPERATURE');
 
 create table D_DewPointTemperature (   
     dew_point_temperature_id          number(6, 0)
@@ -285,6 +289,10 @@ create table D_DewPointTemperature (
 )
 ;
 
+CREATE INDEX ix_d_dewpointtemperature_fahrenheit ON d_dewpointtemperature (dew_point_temperature_fahrenheit);
+CREATE INDEX ix_d_dewpointtemperature_celsius ON d_dewpointtemperature (dew_point_temperature_celsius);
+CREATE INDEX ix_d_dewpointtemperature_kelvin ON d_dewpointtemperature (dew_point_temperature_kelvin);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4','D_DEWPOINTTEMPERATURE');
 
 create table D_WindSpeed (   
     wind_speed_id                     number(6, 0)
@@ -298,6 +306,9 @@ create table D_WindSpeed (
 )
 ;
 
+CREATE INDEX ix_d_windspeed_knots ON d_windspeed (speed_knots);
+CREATE INDEX ix_d_windspeed_meters_per_secnd ON d_windspeed (speed_meters_per_second);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4', 'D_WINDSPEED');
 
 create table D_WindDirection (   
     wind_direction_id                 number(6, 0)
@@ -309,6 +320,8 @@ create table D_WindDirection (
 )
 ;
 
+CREATE INDEX ix_d_winddirection_direction ON d_winddirection (direction);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4', 'D_WINDDIRECTION');
 
 create table D_Pressure (   
     pressure_id                       number(6, 0)
@@ -319,6 +332,8 @@ create table D_Pressure (
 )
 ;
 
+CREATE INDEX ix_d_pressure_barometric_pressure ON d_pressure (barometric_pressure);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4', 'D_PRESSURE');
 
 create table D_Visibility (   
     visibility_id         number(6, 0)
@@ -329,6 +344,9 @@ create table D_Visibility (
 )
 ;
 
+CREATE INDEX ix_d_visibility_visibility ON d_visibility (visibility);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4', 'D_VISIBILITY');
+
 create table D_CloudCoverage (   
     cloud_coverage_id     number(6, 0)
                           default sqCloudCoverageSK.nextVal
@@ -338,6 +356,8 @@ create table D_CloudCoverage (
 )
 ;
 
+CREATE INDEX ix_d_cloudcoverage_cloud_coverage ON d_cloudcoverage (cloud_coverage);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4', 'D_CLOUDCOVERAGE');
 
 create table D_CloudAltitude (   
     cloud_altitude_id     number(6, 0)
@@ -348,6 +368,8 @@ create table D_CloudAltitude (
 )
 ;
 
+CREATE INDEX ix_d_cloudaltitude_cloud_height ON d_cloudaltitude (cloud_height);
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('SEP4', 'D_CLOUDALTITUDE');
 
 CREATE TABLE D_LogSource (
     log_source_id   NUMBER(6, 0) 
@@ -356,7 +378,6 @@ CREATE TABLE D_LogSource (
     log             VARCHAR2(255)
                     NOT NULL
 );
-
 
 CREATE TABLE D_Audit (
     audit_id        NUMBER(6, 0) 
