@@ -10,6 +10,8 @@
 /* Weather dictated sample
  * Determines the accepted sample of facts to be used for analysis by comparing
  * with the most current weather read.
+ *
+ * Currently with a mock read.
  */
 drop table thermal_analysis_accepted_sample purge
 ;
@@ -70,22 +72,10 @@ where
        current_weather.sky_level_1_altitude_feet + (select cloud_altitude from weather_condition_margins)
 ;
 
-/* Coordinates query
- * Fetches the latitude and longitude centers for each grid cell.
- */
-drop table thermal_analysis_coordinates purge
-;
- 
-create table thermal_analysis_coordinates as
-select grid_cell_id
-     , latitude_center as latitude
-     , longitude_center as longitude
-from d_gridcell
-;
-
 /* Thermal probability query
- * Joins a count of all positive delta altitudes with a count of all rows
- * for every grid cell and calculates the probability as positives / all.
+ * Joins a count of all facts with a positive delta_altitude together with a 
+ * count of all facts independent on delta_altitude for every grid cell and 
+ * calculates the probability of a thermal as positive count out of total count.
  */
 drop table thermal_analysis_probability purge
 ; 
@@ -121,6 +111,19 @@ select grid_id as grid_cell_id
 from thermal_analysis_accepted_sample
 where delta_altitude > 0
 group by grid_id
+;
+
+/* Coordinates query
+ * Fetches the latitude and longitude centers for each grid cell.
+ */
+drop table thermal_analysis_coordinates purge
+;
+ 
+create table thermal_analysis_coordinates as
+select grid_cell_id
+     , latitude_center as latitude
+     , longitude_center as longitude
+from d_gridcell
 ;
 
 /* Combined analysis
@@ -161,10 +164,10 @@ select latitude
      , thermal_probability
      , thermal_strength
 from thermal_analysis_full
+where strength_sample_size > 10 -- minimum sample size
 ;
 
 commit;
-
 -- leftovers, contains threshold example
 /*
 create table thermal_analysis as
