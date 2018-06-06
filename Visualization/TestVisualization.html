@@ -10,12 +10,24 @@
   <script>
   (async function(){
  
+  const json = await fetch('http://localhost/Thermal-forecast/Thermals-today.asmx/GetForecastJSON', {
+  method: 'POST',
+  headers: {
+      'Accept': 'application/json,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+      'Content-Type': 'application/x-www-form-urlencoded'
+	  
+    },})
+	.then(res => res.json())
+	.catch(console.log)
+	;
+
+  console.log(json);
+
 	
-  const json = await fetch('http://10.152.204.80:8080/VisualizeThermals/data').then(res=>res.json()).catch(console.log);
-  var json_result_cell_mid_lat = json.cell_mid_lat;
-  var json_result_cell_mid_long = json.cell_mid_long;
-  var json_result_strength = json.strength;
-  var json_result_probability = json.probability;
+  var json_result_cell_mid_lat = json.Cell_mid_lat;
+  var json_result_cell_mid_long = json.Cell_mid_long;
+  var json_result_strength = json.Strengths;
+  var json_result_probability = json.Probabilites;
   var json_result_probability_with_text = [];
  
   json_result_probability.forEach(element => {
