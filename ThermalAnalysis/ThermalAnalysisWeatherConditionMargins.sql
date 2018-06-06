@@ -11,10 +11,10 @@ drop table weather_condition_margins
  
 create table weather_condition_margins as
 select 10 as surface_temperature
-     , 10 as dew_point_temperature
-     , 1 as wind_speed
-     , 1 as visibility
-     , 3000 as cloud_altitude
+     , 20 as dew_point_temperature
+     , 10 as wind_speed
+     , 100 as visibility
+     , 4000 as cloud_altitude
 from dual
 ;
  
