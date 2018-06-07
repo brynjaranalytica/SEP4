@@ -6,7 +6,7 @@
 drop directory weather_data_location
 ;
 
-create or replace directory weather_data_location as 'C:\SEP4\WeatherDataPrepper\PreparedFiles'
+create or replace directory weather_data_location as 'C:\SEP4\ETL\ETL_TransformWeatherData\WeatherDataPrepper\PreparedFiles'
 ;
 
 grant read, write on directory weather_data_location to public

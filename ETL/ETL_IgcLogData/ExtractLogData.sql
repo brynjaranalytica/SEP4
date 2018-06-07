@@ -8,7 +8,7 @@
 drop directory igc_log_data_location
 ;
 
-create or replace directory igc_log_data_location as 'C:\SEP4\IgcLogDataPrepper\PreparedFiles'
+create or replace directory igc_log_data_location as 'C:\SEP4\ETL\ETL_IgcLogData\IgcLogDataPrepper\PreparedFiles'
 ;
 
 grant read, write on directory igc_log_data_location to public
