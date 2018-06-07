@@ -43,7 +43,11 @@ drop materialized view distance_to_station
 ;
  
 create materialized view distance_to_station as
-select a.grid_cell_id, b.station_initials, sqrt(power(a.latitude_center - b.latitude, 2) + power(a.longitude_center - b.longitude, 2)) as distance
+select a.grid_cell_id
+     , b.station_initials
+     , sqrt(power(a.latitude_center - b.latitude, 2) 
+       + power(a.longitude_center - b.longitude, 2)) 
+       as distance
 from (select * from d_gridcell) a, weather_stations b
 ;
 
@@ -54,7 +58,9 @@ drop materialized view shortest_distance
 create materialized view shortest_distance as
 select grid_cell_id, station_initials as nearest_airport, distance
 from distance_to_station a
-where distance <= (select min(distance) from distance_to_station b where a.grid_cell_id = b.grid_cell_id)
+where distance <= (select min(distance) 
+                   from distance_to_station b 
+                   where a.grid_cell_id = b.grid_cell_id)
 order by grid_cell_id
 ;
 

@@ -1,4 +1,6 @@
-/* This script is a test framework with a line of tests on the transformation
+/* TestETL.sql
+ *
+ * This script is a test framework with a line of tests on the transformation
  * process.
  *
  * The tests are stored in a table with a column 'result' dictating whether

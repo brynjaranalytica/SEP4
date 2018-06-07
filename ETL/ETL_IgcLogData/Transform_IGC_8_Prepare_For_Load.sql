@@ -1,4 +1,6 @@
-/* This script prepares the joined igc log and weather data for loading.
+/* Transform_IGC_8_Prepare_For_Load.sql
+ *
+ * This script prepares the joined IGC log and weather data for loading.
  * If there are duplicate surrogate keys in the Transform_IGC_7_Join_Weather_Data
  * that means that 2 records of weather data were found for the log record.
  * A log record should be matched with only one weather data record, otherwise 

@@ -1,4 +1,6 @@
-/* This script calculates the mid point or average point of the movement from
+/* Transform_IGC_5_Average_Latitude_Longitude.sql
+ *
+ * This script calculates the mid point or average point of the movement from
  * the start and end latitude and longitudes. 
  *
  * Past transformation: Transform_IGC_4_Split_To_Second_Segments

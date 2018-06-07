@@ -1,9 +1,11 @@
-/* This script is the first in the chain of transformations of the IGC log data
+/* Transform_IGC_1_Format_Date_Time.sql
+ *
+ * This script is the first in the chain of transformations of the IGC log data
  * extract. Here, the raw time string is split up and stored together with the
  * date into a single date (or datetime if you will) column.
  *
  * Past transformation: None, Refer to ExtractLogData for extraction
- * Next transformation: Transform_IGC_2_Connect_Coordinates
+ * Next transformation: Transform_IGC_2_Connect_Coordinates_Launch_Removed
  */
 drop table transform_igc_1_format_date_time
 ;

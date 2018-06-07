@@ -1,4 +1,6 @@
-/* This script takes the raw coordinates and calculates them into degrees with
+/* Transform_IGC_3_Latitude_Longitude_As_Decimal.sql
+ *
+ * This script takes the raw coordinates and calculates them into degrees with
  * decimals. In order to do this the minutes with a cap of 60 must be converted
  * into its equivalent value out of 100.
  *
@@ -15,7 +17,7 @@
  * 99.915 minutes are equal to 0.99915 degrees and finally the result are the
  * degrees with decimals, in this example 55.99915.
  *
- * Past transformation: Transform_IGC_2_Connect_Coordinates
+ * Past transformation: Transform_IGC_2_Connect_Coordinates_Launch_Removed
  * Next transformation: Transform_IGC_4_Split_To_Second_Segments
  */
 drop table transform_igc_3_latitude_longitude_as_decimal

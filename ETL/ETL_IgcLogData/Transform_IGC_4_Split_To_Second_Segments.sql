@@ -1,4 +1,6 @@
-/* This script takes each movement between two coordinates, invariable of the
+/* Transform_IGC_4_Split_To_Second_Segments.sql
+ *
+ * This script takes each movement between two coordinates, invariable of the
  * time and splits it into 1 second movements. This means that a movement that
  * took 12 seconds is split into 12 individual 1 second movements. The intention
  * is that in the end, all altitude changes are invariable of the time of the

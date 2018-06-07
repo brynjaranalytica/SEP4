@@ -1,4 +1,6 @@
-/* This script joins the igc log data together with the transformed weather
+/* Transform_IGC_7_Join_Weather_Data.sql
+ *
+ * This script joins the igc log data together with the transformed weather
  * data. This is done by first figuring out which weather data is the best match
  * for the given row in the log data. The best match is determined by the
  * closest weather station of the grid cell the log data points to.

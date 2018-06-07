@@ -1,4 +1,6 @@
-/* This script joins all the transformed movements together with the cell in the
+/* Transform_IGC_6_Fetch_Grid_Cell_Id.sql
+ *
+ * This script joins all the transformed movements together with the cell in the
  * grid of Denmark in which the movement falls into, by looking at the latitude
  * and longitude of the movement (which are averages between the start and end
  * points) and pinpointing in which latitude and longitude ranges they are a

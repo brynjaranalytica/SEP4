@@ -1,8 +1,15 @@
-/* This script is one of the more defining of the transformation.
+/* Transform_IGC_2_Connect_Coordinates_Launch_Removed
+ *
+ * This script is one of the more defining of the transformation.
  * Every logged coordinate, except the very first, of the IGC data is connected
  * with the previous, effectively creating transitions between coordinates
  * (or vectors) with the intention of storing change in contrary to state in the
  * dimensional model.
+ *
+ * An additional transformation has been added to this script which removes all
+ * coordinates which are deemed part of the glider's launch phase. A flag is
+ * set after the first sequence of 4 delta_altitudes of values 0 or less that
+ * marks that the launch is over.
  *
  * Past transformation: Transform_IGC_1_Format_Date_Time
  * Next transformation: Transform_IGC_3_Latitude_Longitude_As_Decimal
@@ -38,6 +45,8 @@ declare
   record_count int;
   previous_record transform_igc_1_format_date_time%rowtype;
   new_record transform_igc_2_connect_coordinates%rowtype;
+  during_launch_flag boolean;
+  during_launch_counter int;
 begin
   DBMS_OUTPUT.ENABLE(buffer_size => NULL);
   
@@ -45,6 +54,8 @@ begin
   for current_file in (select distinct(file_path) from transform_igc_1_format_date_time order by file_path asc) loop
     DBMS_OUTPUT.PUT_LINE(current_file.file_path);
     record_count := 0;
+    during_launch_flag := true;
+    during_launch_counter := 0;
   
     -- loops through every record for the current file
     for current_record in (select * from transform_igc_1_format_date_time where file_path = current_file.file_path order by date_of_log asc) loop
@@ -63,7 +74,18 @@ begin
         
         new_record.start_date_time_of_log := previous_record.date_of_log;
         
-        insert into transform_igc_2_connect_coordinates values new_record;
+        if (during_launch_flag) then
+          if (new_record.delta_altitude <= 0) then
+            during_launch_counter := during_launch_counter + 1;
+            if (during_launch_counter >= 4) then
+              during_launch_flag := false;
+            end if;
+          else
+            during_launch_counter := 0;
+          end if;
+        else   
+          insert into transform_igc_2_connect_coordinates values new_record;
+        end if;
                              
       end if;
       previous_record := current_record;
