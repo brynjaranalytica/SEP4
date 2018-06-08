@@ -10,7 +10,7 @@ drop table weather_condition_margins
 ;
  
 create table weather_condition_margins as
-select 10 as surface_temperature
+select 5 as surface_temperature
      , 20 as dew_point_temperature
      , 10 as wind_speed
      , 100 as visibility
@@ -26,6 +26,7 @@ from dual
 select b.nearest_weather_station, count(*)
 from f_movement a, d_gridcell b
 where a.grid_id = b.grid_cell_id
+  and a.delta_altitude > 0
 group by b.nearest_weather_station
 ;
  
@@ -33,7 +34,9 @@ group by b.nearest_weather_station
 select d_surfacetemperature.surface_temperature_fahrenheit, count(*)
 from f_movement, d_surfacetemperature
 where f_movement.surface_temperature_id = d_surfacetemperature.surface_temperature_id
+  and f_movement.delta_altitude > 0
 group by d_surfacetemperature.surface_temperature_fahrenheit
+order by d_surfacetemperature.surface_temperature_fahrenheit
 ;
 
 -- group count of dew point temperatures
@@ -41,6 +44,7 @@ select b.dew_point_temperature_fahrenheit, count(*)
 from f_movement a, d_dewpointtemperature b
 where a.dew_point_temperature_id = b.dew_point_temperature_id
 group by b.dew_point_temperature_fahrenheit
+order by b.dew_point_temperature_fahrenheit
 ;
 
 -- group count of wind direction
@@ -48,6 +52,7 @@ select b.direction, count(*)
 from f_movement a, d_winddirection b
 where a.wind_direction_id = b.wind_direction_id
 group by b.direction
+order by b.direction
 ;
 
 -- group count of wind direction
@@ -55,6 +60,7 @@ select b.speed_knots, count(*)
 from f_movement a, d_windspeed b
 where a.wind_speed_id = b.wind_speed_id
 group by b.speed_knots
+order by b.speed_knots
 ;
 
 -- group count of visibility

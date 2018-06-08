@@ -39,7 +39,7 @@
   end loop;
  end;
  
- --should be 560737
+ --should be 551631
  select COUNT(*) from TRANSFORM_IGC_8_PREAPARE_FOR_LOAD;
  
  --should return no result

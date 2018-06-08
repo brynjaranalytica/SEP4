@@ -1,4 +1,4 @@
-/* ThermalAnalysis.sql
+  /* ThermalAnalysis.sql
  *
  * This script contains all the logic for the identification of thermals from
  * the facts in the dimensional model.
@@ -164,9 +164,10 @@ select latitude
      , thermal_probability
      , thermal_strength
 from thermal_analysis_full
-where strength_sample_size > 30 -- minimum sample size
-  and thermal_strength > 1
-  and thermal_probability > 0.5
+-- Threshold values
+where strength_sample_size >= 30
+  and thermal_strength >= 1
+  and thermal_probability >= 0.5
 ;
 
 commit;

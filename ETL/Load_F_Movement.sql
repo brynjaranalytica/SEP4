@@ -1,5 +1,3 @@
-delete from F_MOVEMENT;
-
 INSERT INTO F_MOVEMENT(delta_altitude, delta_time, log_source_id, grid_id, start_time_id, date_id, 
 surface_temperature_id, dew_point_temperature_id, wind_speed_id, wind_direction_id, 
 pressure_id, visibility_id, cloud_coverage_id, cloud_altitude_id)
@@ -23,6 +21,6 @@ pressure_id, visibility_id, cloud_coverage_id, cloud_altitude_id)
   JOIN D_CLOUDALTITUDE ca ON ca.CLOUD_HEIGHT = jwd.SKY_LEVEL_1_ALTITUDE_FEET
 ;
 
--- should be 560737
+-- should be 551631
 select COUNT(*) from F_MOVEMENT;
 
